@@ -1,0 +1,9 @@
+/* Global styles to prevent horizontal overflow */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Additional global styles can go here */
