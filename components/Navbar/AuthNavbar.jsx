@@ -68,12 +68,12 @@ export default function Navbar() {
             fontWeight={600}
             color={"white"}
             bg={"red.400"}
-            href={"/auth"}
+            href={"/auth/login"}
             _hover={{
               bg: "red.300",
             }}
           >
-            Welcome!!!!!
+            Welcome!
           </Button>
         </Stack>
       </Flex>

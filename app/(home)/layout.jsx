@@ -1,24 +1,25 @@
-"use client";
-import AuthNavbar from "@/components/Navbar/AuthNavbar";
+'use client'
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer"
 import { redirect } from "next/navigation";
 import { useEffect } from "react";
-import Footer from "@/components/Footer/Footer"
-
 
 export default function RootLayout({ children }) {
-  
+
   useEffect(() => {
     const token = localStorage.getItem("token")
     if (token) {
       redirect("/userdashboard");
+    } else {
+      console.log("No Token");
     }
   }, []);
 
   return (
-    <>
-      <AuthNavbar />
-      {children}
-      <Footer/>
-    </>
+      <>
+          <Navbar />
+          {children}
+          <Footer/>
+      </>
   );
 }

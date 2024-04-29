@@ -78,7 +78,7 @@ export default function Navbar() {
             fontWeight={600}
             color={"white"}
             bg={"red.400"}
-            href={"/auth"}
+            href={"/auth/login"}
             _hover={{
               bg: "red.300",
             }}
@@ -216,13 +216,18 @@ const NAV_ITEMS = [
     href: "#services",
   },
   {
-    label: "Contact",
-    id: "contact",
-    href: "#contact",
+    label: "Aim",
+    id: "aim",
+    href: "#aim",
   },
   {
     label: "About",
     id: "about",
     href: "#about",
   },
+  {
+    label: "Contact",
+    id: "contact",
+    href: "#contact",
+  }
 ];
