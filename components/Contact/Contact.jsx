@@ -48,19 +48,19 @@ export default function ContactFormWithSocialButtons() {
       css={{
         backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
         backgroundAttachment: 'fixed',
+        minHeight: '100vh',
       }}
-      id="contact"
-      marginTop={40}>
+      id="contact">
       <Box borderRadius="lg" m={{ base: 5, md: 16, lg: 10 }} p={{ base: 5, lg: 16 }}>
         <Box>
-          <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
+          <VStack spacing={{ base: 4, md: 8, lg: 20 }} align="center">
             <Heading
               >
               Get in Touch
             </Heading>
 
             <Stack
-              spacing={{ base: 4, md: 8, lg: 20 }}
+              spacing={{ base: 2, md: 4, lg: 15 }}
               direction={{ base: 'column', md: 'row' }}>
 
               <Box
@@ -69,7 +69,7 @@ export default function ContactFormWithSocialButtons() {
                 p={8}
                 color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                 shadow="base">
-                <VStack spacing={5}>
+                <VStack spacing={3} align="stretch">
                   <FormControl isRequired>
                     <FormLabel>Name</FormLabel>
 

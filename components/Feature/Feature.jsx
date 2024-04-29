@@ -9,10 +9,11 @@ import {
   Icon,
   Stack,
   Text,
+  Center,
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import { FcAssistant, FcCollaboration, FcDonate } from "react-icons/fc";
+import { FiPieChart, FiDatabase, FiBarChart2 } from "react-icons/fi";
 
 const Card = ({ heading, description, icon, href }) => {
   return (
@@ -36,15 +37,12 @@ const Card = ({ heading, description, icon, href }) => {
         >
           {icon}
         </Flex>
-        <Box mt={2}>
+        <Box mt={4}>
           <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={"sm"}>
+          <Text mt={5} fontSize={"sm"}>
             {description}
           </Text>
         </Box>
-        <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-          Learn more
-        </Button>
       </Stack>
     </Box>
   );
@@ -52,64 +50,45 @@ const Card = ({ heading, description, icon, href }) => {
 
 export default function Feature() {
   return (
-    <div id="services">
+    <div id="services" style={{ height: "100vh"}}>
+      <Center h="100vh">
       <Box p={4}>
         <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
           <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
             Our Services
           </Heading>
           <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            obcaecati ut cupiditate pariatur, dignissimos, placeat amet
-            officiis.
+          Trendspectrum provides insights by uncovering valuable data trends, processes and analyzes data with cutting-edge tools for accuracy, and offers visualization solutions to effectively communicate insights and drive actionable outcomes.
           </Text>
         </Stack>
 
         <Container maxW={"5xl"} mt={12}>
           <Flex flexWrap="wrap" gridGap={6} justify="center">
             <Card
-              heading={"Heading"}
-              icon={<Icon as={FcAssistant} w={10} h={10} />}
+              heading={"Insights Generation"}
+              icon={<Icon as={FiPieChart} w={10} h={10} />}
               description={
-                "Lorem ipsum dolor sit amet catetur, adipisicing elit."
+                "Unlock the power of data with Trendspectrum's Insights Generation service. We delve deep into your data to extract valuable trends, patterns, and correlations."
               }
-              href={"#"}
             />
             <Card
-              heading={"Heading"}
-              icon={<Icon as={FcCollaboration} w={10} h={10} />}
+              heading={"Data Processing and Analysis"}
+              icon={<Icon as={FiDatabase} w={10} h={10} />}
               description={
-                "Lorem ipsum dolor sit amet catetur, adipisicing elit."
+                "At Trendspectrum, we transform raw data into actionable insights. Our advanced tools and methodologies clean, organize, and analyze complex datasets, ensuring accurate and reliable results."
               }
-              href={"#"}
             />
             <Card
-              heading={"Heading"}
-              icon={<Icon as={FcDonate} w={10} h={10} />}
+              heading={"Visualization Solutions"}
+              icon={<Icon as={FiBarChart2} w={10} h={10} />}
               description={
-                "Lorem ipsum dolor sit amet catetur, adipisicing elit."
+                "Trendspectrum's Visualization Solutions create captivating visual representations of your data for clear understanding and actionable insights. From interactive dashboards to compelling infographics, we empower effective communication and drive meaningful outcomes."
               }
-              href={"#"}
-            />
-            <Card
-              heading={"Heading"}
-              icon={<Icon as={FcDonate} w={10} h={10} />}
-              description={
-                "Lorem ipsum dolor sit amet catetur, adipisicing elit."
-              }
-              href={"#"}
-            />
-            <Card
-              heading={"Heading"}
-              icon={<Icon as={FcDonate} w={10} h={10} />}
-              description={
-                "Lorem ipsum dolor sit amet catetur, adipisicing elit."
-              }
-              href={"#"}
             />
           </Flex>
         </Container>
       </Box>
+      </Center>
     </div>
   );
 }

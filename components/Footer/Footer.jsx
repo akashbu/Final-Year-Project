@@ -55,13 +55,13 @@ export default function Footer() {
         align={{ base: 'center', md: 'center' }}>
         <Text>© 2024 TrendSpectrum All rights reserved.</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
+          <SocialButton label={'Twitter'}>
             <FaTwitter />
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
+          <SocialButton label={'YouTube'}>
             <FaYoutube />
           </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton label={'Instagram'}>
             <FaInstagram />
           </SocialButton>
         </Stack>
