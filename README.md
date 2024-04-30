@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+TrendSpectrum is a webapp that allow vendors to effortlessly upload data, analyze trends, and get actionable insights. By democratizing access to advanced analytics, TrendSpectrum facilitates informed decision-making, enabling vendors to optimize strategies and capitalize on emerging opportunities. With its intuitive interface and powerful features, TrendSpectrum revolutionizes data-driven decision-making, driving innovation and business growth in competitive markets. Moreover, utilized Amazon Web Services (AWS) tools, specifically AWS S3 (Simple Storage Service) and EMR (Elastic MapReduce), to efficiently handle a large dataset totaling 20GB. Employed PySpark, a Python library for parallel processing with Apache Spark, that significantly reduced the time it took to process the data by an impressive 60%. 
 
-## Getting Started
+### Getting Started
 
 First, run the development server:
 
@@ -16,21 +16,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Working Snapshots
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![alt text](p4.png) ![alt text](p1.png) ![alt text](p2.png) ![alt text](p3.png)

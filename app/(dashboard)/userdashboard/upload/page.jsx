@@ -38,67 +38,6 @@ export default function UploadFile() {
     }
   }, []);
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   if (!file) {
-  //     // If no file is selected, show error message
-  //     toast({
-  //       title: "Please select a file",
-  //       status: "error",
-  //       duration: 5000,
-  //       isClosable: true,
-  //     });
-  //     return;
-  //   }
-
-  //   setStatusMessage("creating");
-  //   setLoading(true);
-  //   // Do all the image upload and everything
-
-  //   if (file) {
-  //     setStatusMessage("uploading file");
-  //     const signedURLResult = await getSignedURL(user);
-
-  //     if (signedURLResult.failure !== undefined) {
-  //       setStatusMessage("failed");
-  //       setLoading(false);
-  //       console.error(signedURLResult.failure);
-  //       return;
-  //     }
-
-  //     const { url } = signedURLResult.success;
-
-  //     const response = await fetch(url, {
-  //       method: "PUT",
-  //       headers: {
-  //         "Content-Type": file.type,
-  //       },
-  //       body: file,
-  //     });
-
-  //     response.body.onprogress = (event) => {
-  //       const progress = Math.round((event.loaded / event.total) * 100);
-  //       console.log("Hello",progress)
-  //       setUploadProgress(progress);
-  //     };
-  //   }
-
-  //   setStatusMessage("uploaded");
-  //   setLoading(false);
-  //   setPreviewUrl(null);
-  //   setFile(null);
-  //   setUploadProgress(0);
-  //   toast({
-  //     title: "File uploaded successfully",
-  //     status: "success",
-  //     duration: 8000,
-  //     isClosable: true,
-  //   });
-  //   router.push("/user-dashboard");
-  //   setStatusMessage("");
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
